@@ -49,6 +49,8 @@ if(h!=0){
     const node2 = document.createTextNode("delete");
     link1.appendChild(node1); 
     link2.appendChild(node2);
+    link1.id="_"+list1.indexOf(item);;
+    link1.id="_"+list1.indexOf(item);;
     spanele1.appendChild(link1);
     spanele2.appendChild(link2);
     const element = document.getElementById("container");
