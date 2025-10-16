@@ -1,0 +1,85 @@
+/* Container for the checkbox and the h2 */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+.box {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border-style:solid;
+    border-color: rgb(149, 149, 226);
+    border-width: 3px;
+    margin: 15px;
+}
+
+/* Flexbox for the h2 to separate the text and the links */
+
+.box h2 {
+    display: flex;
+    justify-content: space-between; /* Pushes the left item left, and the right item right */
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+    color: rgb(6, 147, 135);
+}
+
+body{background: linear-gradient(90deg,rgba(227, 227, 227, 1) 0%, rgba(86, 98, 153, 1) 91%);}
+
+/* Flexbox for the new .actions div to group the links */
+.actions {
+    display: flex;
+    gap: 15px; /* Adds space between the "update" and "delete" links */
+}
+
+/* Existing link style */
+a {
+    color: rgb(6, 1, 2);
+    cursor: pointer;
+    text-decoration: underline;
+        
+}
+
+
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero h1 {
+    color: white;
+    font-size: 80px;
+    font-family: "Klee One", cursive;
+}
+.header input {
+    width: 500px;
+    height: 60px;
+    border-style: solid;
+    border-radius: 10px;
+}
+.header button {
+    width: 100px;
+    height: 62px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #006B8F;
+    background-color: #006B8F;
+}
+.footer {
+    color: white;
+    margin-top: 3%;
+    background-color: rgb(52, 52, 52);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.task{
+    text-align: center; font-size: 40px;font-family: "Klee One", cursive;
+    color: white;
+}
