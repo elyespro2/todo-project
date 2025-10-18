@@ -13,10 +13,11 @@
 <body>
     <div class="hero">
         <h1>To Do List </h1>
-        <div class="header"><input  id="todo" type="text">
-            <button onclick="add()">Add</button>
+            <div class="header"> <form id="todoForm" ><input  id="todo" pattern="[0-9]{5}" type="text" title="5 numbers" required>
+                <input  type="submit" class="button" >
+            </form>
         </div>
-    </div>
+    </div>  
     <h3 class="task">Task List</h3>
     <div class="container" id="container">
         

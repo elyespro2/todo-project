@@ -63,7 +63,7 @@ a {
     border-style: solid;
     border-radius: 10px;
 }
-.header button {
+.header .button {
     width: 100px;
     height: 62px;
     border-style: solid;
