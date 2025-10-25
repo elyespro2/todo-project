@@ -101,8 +101,9 @@ function handle(az) {
 
 function creatediv(bb) {
   const para = document.createElement("div");
+  const taskId = Date.now() + Math.random();
   para.className = "box";
-  para.id = "_" + list1.indexOf(bb);
+  para.id = "_" + taskId;
   const box = document.createElement("input");
   box.type = "checkbox";
   para.appendChild(box);
@@ -120,9 +121,9 @@ function creatediv(bb) {
   para2.appendChild(spanele1);
   para2.appendChild(spanele2);
   const link1 = document.createElement("a");
-  link1.id = "u" + list1.indexOf(bb);
+  link1.id = "u" + taskId;
   const link2 = document.createElement("a");
-  link2.id = "__" + list1.indexOf(bb);
+  link2.id = "__" + taskId;
   const node1 = document.createTextNode("update");
   const node2 = document.createTextNode("delete");
   link1.appendChild(node1);
