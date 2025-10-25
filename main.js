@@ -90,7 +90,7 @@ function handle(az) {
     elementToRemove.remove();
   }
   list1.splice(az, 1);
-  h--;
+  h = list1.length;
   updatelist()
 
 
