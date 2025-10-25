@@ -83,8 +83,8 @@ function workme() {
 
 
 
-function handle(az) {
-  const elementToRemove = document.getElementById('_' + az);
+function handle(az,ok) {
+  const elementToRemove = document.getElementById('_' + ok);
   // Call the remove() method
   if (elementToRemove) {
     elementToRemove.remove();
@@ -134,7 +134,7 @@ function creatediv(bb) {
   const element = document.getElementById("container");
   element.insertBefore(para, container.firstChild);
   link2.addEventListener('click', function () {
-    handle(list1.indexOf(bb)); // or use a stable ID
+    handle(bb,taskId); // or use a stable ID
   });
   
 }
